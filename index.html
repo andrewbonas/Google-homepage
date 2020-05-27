@@ -2,80 +2,51 @@
 <html>
 <head>
   <title>Google Search Engine Example</title>
-  <meta name="andrewbonas" lang="en">
+  <meta lang="en">
+</head>
 <style>
-  ul{
+  .nav-bar{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 15px 5px ;
     overflow: hidden;
     background-color: transparent;
   }
-  li{
-    float: right;
-  }
-  li a{
-    display: block;
+  .nav-bar #right-side a{
     color: black;
     text align: center;
     padding: 0px 2px;
-    text-decoration:none;
-  }
-  body{
-    background-color:transparent;
-    align-content: center;
-  }
-  .google-logo{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 160px;
-    width: auto;
-    height:auto;
-    display: block;
-    position: relative;
-  }
-  .search{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex; justify-content: center;
-  }
-  .search #search-bar{
-    display: block;
-    width: 260px;
-    position: center;
-  }
-  .search #search{
-    
-  }
-  
-</style>  
-</head>  
-<body>
+    text-decoration: none;
+    float: right;
+</style>   
+<body id="page-container">
 <nav>
-    <ul>
-    <li id="right-side"><a href="Gmail.asp">Gmail</a></li>
-    <li id="right-side"><a href="Images.asp">Images</a></li>
+    <ul class="nav-bar">
+    <li id="right-side"><a href="#">Gmail</a></li>
+    <li id="right-side"><a href="#">Images</a></li>
     </ul>
 </nav>
+<div>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
-        alt="Google" class="google-logo"
-        width="150" height="50">
+        alt="Google" class="google-logo">
+</div>
   <div class="search">
     <form action="search google">
-      <input id="search-bar" type="text" placeholder="Search Google or type a URL">
+      <input id="search-bar" type="search" required placeholder="Search Google or type a URL">
       <button id="button" type="search">Search</button>
       <button id="button" type="Search">I'm Feeling Lucky</button>
-  </form>
+    </form>
   </div>
   <footer>
-    <ul>
-      <li><a href="advertising.asp">Advertising</a></li>
-      <li><a href="business.asp">Business</a></li>
-      <li><a href="howsearchworks.asp">How Search Works</a></li>
-      <li><a href="Privacy.asp">Privacy</a></li>
-      <li><a href="Terms.asp">Terms</a></li>
-      <li><a href="Settings.asp">Settings</a></li>
+    <ul class="footer-wrap">
+      <li id="bottom-left"><a href="#">Advertising</a></li>
+      <li id="bottom-left"><a href="#">Business</a></li>
+      <li id="bottom-left"><a href="#">How Search Works</a></li>
+      <li id="bottom-right"><a href="#">Privacy</a></li>
+      <li id="bottom-right"><a href="#">Terms</a></li>
+      <li id="bottom-right"><a href="#">Settings</a></li>
+    </ul>
   </footer>
 </body>
+
 </html>
