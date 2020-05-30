@@ -32,31 +32,39 @@
     display: block;
     margin-left:auto;
     margin-right: auto;
-    width: 400px;
+    width: 480px;
     padding: 10px;
     border: 1px solid #eaeaea;
     font-family: Roboto, arial;
     outline: none;
-    border-radius: 80px;
-    
+    border-radius: 80px; 
+    font-size: 15px; 
   }
   .button-group{
-  display: flex;
-  flex-direction: row;
-  margin: 11px 4px;
-  justify-content: center;
-  padding: 5px 20px;
-  border-radius: 7px;
-  border-color: blanchedalmond;
-  font-family: Roboto, arial;
-  outline: none;
-  button-background: #f2f2f2;
-  box-shadow: none;
-  border: 0;
-  color: #5f6368;
-  font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    margin: 11px 4px;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 7px;
+    border-color: blanchedalmond;
+    font-family: Roboto, arial;
+    outline: none;
+    button-background: #f2f2f2;
+    box-shadow: none;
+    border: 0;
+    color: #5f6368;
+    font-size: 15px;
   }
-
+  .french{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  .french a{
+    text-decoration: none;
+  }
   .footer-wrap{
     list-style-type: none;
     padding: 10px 2px 8px 0px;
@@ -68,6 +76,7 @@
     border-color: 1px solid #e7e7e7;
     margin-bottom: auto;
     margin-right: auto;
+    margin-left: -10px;
   }
   .footer-wrap #bottom-right a{
     text align: center;
@@ -77,7 +86,6 @@
     color: black;
     font-family: Roboto, arial;
     font-size: 15px;
-    left: 5px;
     color: #5f6368;
   }
   .footer-wrap #bottom-left a{
@@ -89,6 +97,7 @@
     font-family: Roboto, arial;
     font-size: 15px;
     color: #5f6368;
+  }
 </style>   
 <body id="page-container">
 <nav>
@@ -97,19 +106,22 @@
     <li id="right-side"><a href="#">Images</a></li>
     </ul>
 </nav>
-<div>
+  <div>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
         alt="Google" class="google-logo">
-</div>
+  </div>
   <div class="search">
     <form action="search google">
       <input id="search-bar" type="search" required placeholder="Search Google or type a URL">
       </div>
       <div class="button-group">
       <button class="button-group" type="search">Google Search</button>
-      <button class="button-group" type="Search">Im Feeling Lucky</button>
+      <button class="button-group" type="Search">I'm Feeling Lucky</button>
     </form>
-    </div>
+  </div>
+  <div class="french">
+    Google offered in: <a href="#">Français</a>
+  </div>
   <footer>
     <ul class="footer-wrap">
       <li id="bottom-left"><a href="#">Advertising</a></li>
@@ -121,5 +133,4 @@
     </ul>
   </footer>
 </body>
-
 </html>
